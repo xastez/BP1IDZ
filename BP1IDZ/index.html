@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таймер</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #time {
+            font-size: 3em;
+            margin: 20px;
+        }
+
+        button {
+            font-size: 1em;
+            margin: 5px;
+            padding: 10px 20px;
+        }
+
+        input {
+            width: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Онлайн-таймер</h1>
+
+    <div>
+        Період (секунди): <input type="number" id="period" value="60">
+    </div>
+
+    <div id="time">00:00</div>
+
+    <div>
+        <button id="start">Старт</button>
+        <button id="pause">Пауза</button>
+        <button id="reset">Скасувати</button>
+    </div>
+
+    <div>
+        Дія після завершення:
+        <select id="action">
+            <option value="stop">Зупинити</option>
+            <option value="repeat">Повторити</option>
+        </select>
+    </div>
+
+    <script src="timer.js"></script>
+</body>
+</html>
