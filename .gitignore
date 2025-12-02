@@ -1,0 +1,8 @@
+.vs/
+*.sln
+BP1IDZ.vcxproj*
+bin/
+obj/
+.vscode/
+Debug/
+Release/
